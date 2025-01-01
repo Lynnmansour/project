@@ -1,0 +1,75 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 55px;
+    width: 82px;
+    border-radius: 50%; /* Makes the logo circular */
+    object-fit: cover;
+}
+
+.navbar .search-bar {
+    flex: 0 0 300px; /* Set a fixed width for the search bar */
+    margin: 0 20px;
+}
+
+.navbar .search-bar input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.navbar-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .links a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.navbar .links a:hover {
+    background-color: #f0f0f0;
+}
+
+.navbar .actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.navbar .location, .navbar .login {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.navbar .login {
+    color: orange;
+    font-weight: bold;
+}
