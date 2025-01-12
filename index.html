@@ -11,28 +11,250 @@
     <link rel="stylesheet" href="style/nav-bar.css">
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/js/all.js" defer></script>
     <script src="header-navbar.js" defer></script>
-    <title>Organic Matcha</title>
+    <title>Organic Matcha</title><style>
+        body {
+            margin-top: 120px;
+        }
+
+        .scroll-animations {
+            opacity: 0;
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .scrolled {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans">
-    <!-- Placeholder for Header and Navbar -->
     <div id="header-navbar"></div>
-
-    <!-- Content -->
     <main class="container mx-auto p-6">
-        <section class="mb-6">
-            <h2 class="text-xl font-bold">Organic Matcha</h2>
-            <p>Organic Matcha Cafe</p>
+        <section class="mb-6 text-center">
+            <div class="relative w-full h-96 mx-auto overflow-hidden">
+                <div id="photo-carousel" class="absolute inset-0 flex justify-center items-center">
+                    <img src="photo1.jpg" alt="Photo 1" class="w-full h-full object-cover fade-in">
+                </div>
+                <button
+                    id="prev-arrow"
+                    class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-green-700 text-white p-4 rounded-full hover:bg-green-800 focus:outline-none"
+                >
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button
+                    id="next-arrow"
+                    class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-green-700 text-white p-4 rounded-full hover:bg-green-800 focus:outline-none"
+                >
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <button class="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 focus:outline-none">
+                    Shop Now
+                </button>
+            </div>
         </section>
-        <section>
-            <h2 class="text-xl font-bold">Features</h2>
-            <ul class="list-disc pl-6">
-                <li>products</li>
-                <li>test</li>
-            </ul>
+        <section class="space-y-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <video class="w-full h-80 object-cover rounded-lg shadow-lg scroll-animations fadeInLeft" controls autoplay muted>
+                        <source src="assets/videos/headvideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="text-gray-700">
+                    <h2 class="text-2xl font-bold mb-4">Video Description</h2>
+                    <p class="mb-4">
+                        This video showcases a dynamic and engaging piece of content designed to captivate the viewer. Whether it's for storytelling, education, or entertainment, the video serves as a prime example of visual creativity.
+                    </p>
+                    <p>
+                        Use this space to provide more details about the video's context, purpose, or background. It's an excellent way to enrich the viewer's experience by offering additional insights.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="text-gray-700">
+                    <h2 class="text-2xl font-bold mb-4">Video Description</h2>
+                    <p class="mb-4">
+                        This video showcases a dynamic and engaging piece of content designed to captivate the viewer. Whether it's for storytelling, education, or entertainment, the video serves as a prime example of visual creativity.
+                    </p>
+                    <p>
+                        Use this space to provide more details about the video's context, purpose, or background. It's an excellent way to enrich the viewer's experience by offering additional insights.
+                    </p>
+                </div>
+                <div>
+                    <video class="w-full h-80 object-cover rounded-lg shadow-lg scroll-animations fadeInLeft" controls muted>
+                        <source src="assets/videos/headvideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
         </section>
+        <section class="mt-12">
+            <h2 class="text-green-700 text-2xl font-bold mb-4 text-center">Our Services:</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img
+                        class="w-full h-80 object-cover transform transition-transform duration-300 group-hover:scale-110 zoomIn"
+                        src="assets/images/foodservices.jpg"
+                        alt="Food Services"
+                    >
+                    <a href="/shop" class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 zoomIn">
+                        <span class="text-white text-lg font-semibold">Shop now</span>
+                    </a>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img
+                        class="w-full h-80 object-cover transform transition-transform duration-300 group-hover:scale-110 zoomIn"
+                        src="assets/images/Pancakeservice.jpg"
+                        alt="Pancake Service"
+                    >
+                    <a href="/shop" class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 zoomIn">
+                        <span class="text-white text-lg font-semibold">Shop now</span>
+                    </a>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img
+                        class="w-full h-80 object-cover transform transition-transform duration-300 group-hover:scale-110 zoomIn"
+                        src="assets/images/ourservices.jpg"
+                        alt="Our Services"
+                    >
+                    <a href="/shop" class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 zoomIn">
+                        <span class="text-white text-lg font-semibold">Shop now</span>
+                    </a>
+                </div>
+            </div>
+        </section>                
     </main>
-    <footer class="bg-gray-800 text-white p-4 text-center">
-        <p>© 2024 Your Team</p>
-    </footer>
+<footer class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
+            
+            <!-- About Us Section -->
+            <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-green-500">ABOUT US</h3>
+                <ul class="space-y-2">
+                    <li><a href="contact-us-faqs.html" class="hover:text-green-400 transition">Contact Us & FAQs</a></li>
+                    <li><a href="#" class="hover:text-green-400 transition">Our Story</a></li>
+                    <li><a href="#" class="hover:text-green-400 transition">Encha Info Resources</a></li>
+                    <li><a href="#" class="hover:text-green-400 transition">Recipes</a></li>
+                </ul>
+            </div>
+
+            <!-- Learn More Section -->
+            <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-green-500">LEARN MORE</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-green-400 transition">Subscribe & Save up to 15%</a></li>
+                    <li><a href="#" class="hover:text-green-400 transition">Shipping Policy</a></li>
+                    <li><a href="#" class="hover:text-green-400 transition">Terms and Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Links Section -->
+            <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-green-500">FOLLOW US</h3>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://instagram.com" class="hover:text-green-400 transition">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="https://facebook.com" class="hover:text-green-400 transition">
+                        <i class="fab fa-facebook text-2xl"></i>
+                    </a>
+                    <a href="https://tiktok.com" class="hover:text-green-400 transition">
+                        <i class="fab fa-tiktok text-2xl"></i>
+                    </a>
+                    <a href="https://youtube.com" class="hover:text-green-400 transition">
+                        <i class="fab fa-youtube text-2xl"></i>
+                    </a>
+                    <a href="mailto:contact@organicmatcha.com" class="hover:text-green-400 transition">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-12 text-center">
+            <p class="text-sm text-gray-400">© 2024 Organic Matcha Team. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+    <script>
+        const images = ["photo1.jpg", "photo2.jpg", "photo3.jpg"];
+        let currentIndex = 0;
+        const carousel = document.getElementById("photo-carousel");
+        const prevArrow = document.getElementById("prev-arrow");
+        const nextArrow = document.getElementById("next-arrow");
+
+        function updateCarousel(index) {
+            carousel.innerHTML = `
+                <img src="${images[index]}" alt="Photo ${index + 1}" class="w-full h-full object-cover fade-in">
+            `;
+        }
+
+        prevArrow.addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateCarousel(currentIndex);
+        });
+
+        nextArrow.addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateCarousel(currentIndex);
+        });
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateCarousel(currentIndex);
+        }, 5000);
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const scrollElements = document.querySelectorAll(".scroll-animations");
+
+            const elementInView = (el, dividend = 1) => {
+                const elementTop = el.getBoundingClientRect().top;
+                return (
+                    elementTop <=
+                    (window.innerHeight || document.documentElement.clientHeight) / dividend
+                );
+            };
+
+            const displayScrollElement = (element) => {
+                element.classList.add("scrolled");
+            };
+
+            const hideScrollElement = (element) => {
+                element.classList.remove("scrolled");
+            };
+
+            const handleScrollAnimation = () => {
+                scrollElements.forEach((el) => {
+                    if (elementInView(el, 1.25)) {
+                        displayScrollElement(el);
+                    } else {
+                        hideScrollElement(el);
+                    }
+                });
+            };
+
+            window.addEventListener("scroll", () => {
+                handleScrollAnimation();
+            });
+        });
+    </script>
 </body>
 </html>
