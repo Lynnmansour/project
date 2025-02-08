@@ -3,36 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/index.css">
-    <link rel="stylesheet" href="style/nav-bar.css">
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/js/all.js" defer></script>
-    <script src="header-navbar.js" defer></script>
-    <title>Organic Matcha</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
-    <!-- Placeholder for Header and Navbar -->
-    <div id="header-navbar"></div>
+<body>
+    <header class="bg-green-600 text-white p-4 text-center fixed top-0 w-full z-50">
+        <h1 class="text-2xl font-bold">FREE SHIPPING ON ALL ORDERS ABOVE $30!</h1>
+    </header>
+    <nav class="fixed top-16 left-0 w-full bg-white shadow-md z-40">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <!-- Left: Logo and Name -->
+            <div class="flex items-center">
+                <img src="assets/images/logo.png" alt="Logo" class="h-14 w-14 rounded-full mr-4">
+                <a href="index.html">
+                    <span class="text-black font-bold text-xl pacifico-regular">Organic Matcha  Café</span>
+                </a>
+            </div>
+            <!-- Center: Links -->
+            <div class="flex space-x-8 text-sm font-medium">
+                <a href="index.html" class="text-black hover-success mt-4">HOME</a>
+                <div class="dropdown">    
+                    <li><a href="menu.html" class="menu-link">MENU<i class="fa-solid fa-chevron-down" ></i></a></li>
+                     <div class="dropdown-content">
+                     <li><a href="menu.html" >Food</a></li>
+                     <li><a href="drink.html" >Drinks</a></li>
+                     <li><a href="dessert.html">Desserts</a></li>
+                    </div>
+                    </div>
+                <a href="#aboutus" class="text-black hover-success">ABOUT US</a>
+                <a href="contact.html" class="text-black hover-success">CONTACT US</a>
+            </div>
+            
+            <!-- Right: Search and Login Icon -->
+            <div class="flex items-center space-x-4">
+                <input type="text" placeholder="Search..." 
+                       class="border border-gray-300 rounded-lg px-3 py-1 focus:outline-none focus:ring-2 focus:ring-green-300">
+                <a href="signup.html">
+                    <i class="fas fa-user-circle text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Content -->
-    <main class="container mx-auto p-6">
-        <section class="mb-6">
-            <h2 class="text-xl font-bold">Organic Matcha</h2>
-            <p>Organic Matcha</p>
-        </section>
-        <section>
-            <h2 class="text-xl font-bold">Features</h2>
-            <ul class="list-disc pl-6">
-                <li>products</li>
-                <li>test</li>
-            </ul>
-        </section>
-    </main>
-    <footer class="bg-gray-800 text-white p-4 text-center">
-        <p>© 2024 Your Team</p>
-    </footer>
+  
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<div id="aboutus">
+          <div id="image-display">
+              <img src="assets/images/aboutus.jpeg" alt="aboutus" id="pic3" />
+          </div>
+         <div id="imagedescription">
+          <h1>About Us</h1>
+          <p>At Organic Matcha, our mission is to create a warm and inviting atmosphere where every sip and bite is a celebration of pure, wholesome goodness. Whether you're looking to unwind solo or share a cozy moment with friends, our café is the perfect haven. Indulge in our delicious, organic matcha creations, freshly brewed coffees, and mouthwatering bites that are as nourishing as they are tasty. Take a break from the hustle and bustle, and let our calming ambiance invite you to relax, recharge, and savor life’s simple pleasures. Your perfect spot for relaxation, connection, and flavor – all in one place. </p>
+      </div>
+      </div>
+      <div id="ourservices">
+      <h1>Our Services</h1>
+      <div id="servicecontainer">
+          <div class="service-item">
+              <a href="menu.html">
+                  <div class="service-card">
+                      <img src="assets/images/foodservices.jpeg" alt="Food Service">
+                      <div class="service-description">
+                          <h2>Food</h2>
+                          <p>Explore our exquisite food menu with fresh ingredients.</p>
+                          <button class="shop-now">Order Now</button>
+                      </div>
+                  </div>
+              </a>
+          </div>
+          <div class="service-item">
+              <a href="dessert.html">
+                  <div class="service-card">
+                      <img src="assets/images/Pancakeservice.jpg" alt="Dessert Service">
+                      <div class="service-description">
+                          <h2>Desserts</h2>
+                          <p>Indulge in our delicious dessert selections.</p>
+                          <button class="shop-now mt-7">Order Now</button>
+                      </div>
+                  </div>
+              </a>
+          </div>
+          <div class="service-item">
+              <a href="drink.html">
+                  <div class="service-card">
+                      <img src="assets/images/ourservices.jpg" alt="Drinks Service">
+                      <div class="service-description">
+                          <h2>Drinks</h2>
+                          <p>Refresh yourself with our selection of beverages.</p>
+                          <button class="shop-now">Order Now</button>
+                      </div>
+                  </div>
+              </a>
+          </div>
+      </div>
+  </div>
+
+      <div id="bestseller">
+        <div id="imgdisplay">
+            <video id="vid2" autoplay loop muted playsinline>
+                <source src="assets/images/bestseller.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div id="imgdescription">
+            <h1>Our Best Seller</h1>
+            <p>A Drink for the Mind and Body Matcha is more than just a drink—it's an experience.Packed with antioxidants, this vibrant green tea powder is known for its rich flavor and health benefits. Unlike traditional tea, matcha involves consuming the entire tea leaf, ensuring you get every bit of its powerful nutrients. With its smooth, earthy taste and gentle caffeine boost, matcha helps you feel calm, focused, and energized all day long. Whether you enjoy it as a creamy latte, a refreshing iced beverage, or blended into smoothies, matcha's versatility makes it a perfect addition to your daily routine. Embrace the natural, zen-like energy of matcha and elevate your wellness journey—one sip at a time!</p>
+        </div>
+    </div>
+
+
+
+      <footer>
+          <div id="footerdescription">
+          <div>
+          <h2>ABOUT US</h2>
+          <ul>
+              <li><a href="contact.us.html">Contact Us & FAQs</a></li>
+              <li><a href="">Our Story</a></li>
+              <li><a href="">Encha Info Resources</a></li>
+              <li><a href="">Recipes</a></li>
+          </ul>
+          </div>
+          <div>
+              <h2>LEARN MORE</h2>
+          <ul>
+              <li><a href="">Subscribe & Save up to 15%</a></li>
+              <li><a href="">Shipping Policy</a></li>
+              <li><a href="">Terms and Conditions</a></li>
+          </ul>
+          </div>
+          <div>
+              <h2 >FOLLOW US</h2>
+              <div class="flex justify-center space-x-6">
+                  <a href="https://instagram.com" class="hover:text-green-400 transition">
+                      <i class="fab fa-instagram text-2xl"></i>
+                  </a>
+                  <a href="https://facebook.com" class="hover:text-green-400 transition">
+                      <i class="fab fa-facebook text-2xl"></i>
+                  </a>
+               <a href="mailto:contact@organicmatcha.com" class="hover:text-green-400 transition">
+                      <i class="fas fa-envelope text-2xl"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+      <div id="st">
+          <p id="stp">© 2024 Organic Matcha Team. All rights reserved.</p>
+      </div>
+          </div>
+
+
+
+
+      </footer>
+      <script src="javascript.js"></script>
+
+
+
+
 </body>
 </html>

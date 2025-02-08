@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/js/all.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-green-600 text-white p-4 text-center fixed top-0 w-full z-50">
+        <h1 class="text-2xl font-bold">FREE SHIPPING ON ALL ORDERS ABOVE $30!</h1>
+    </header>
+    <nav class="fixed top-16 left-0 w-full bg-white shadow-md z-40">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <!-- Left: Logo and Name -->
+            <div class="flex items-center">
+                <img src="assets/images/logo.png" alt="Logo" class="h-14 w-14 rounded-full mr-4">
+                <a href="index.html">
+                    <span class="text-black font-bold text-xl pacifico-regular">Organic Matcha  Café</span>
+                </a>
+            </div>
+            <!-- Center: Links -->
+            <div class="flex space-x-8 text-sm font-medium">
+                <a href="index.html" class="text-black hover-success mt-4">HOME</a>
+                <div class="dropdown">    
+                    <li><a href="menu.html" class="menu-link">MENU<i class="fa-solid fa-chevron-down" ></i></a></li>
+                     <div class="dropdown-content">
+                     <li><a href="menu.html" >Food</a></li>
+                     <li><a href="drink.html" >Drinks</a></li>
+                     <li><a href="dessert.html">Desserts</a></li>
+                    </div>
+                    </div>
+                <a href="index.html#aboutus" class="text-black hover-success">ABOUT US</a>
+                <a href="contact.html" class="text-black hover-success">CONTACT US</a>
+            </div>
+            
+            <!-- Right: Search and Login Icon -->
+            <div class="flex items-center space-x-4">
+                <input type="text" placeholder="Search..." 
+                       class="border border-gray-300 rounded-lg px-3 py-1 focus:outline-none focus:ring-2 focus:ring-green-300">
+                <a href="signup.html">
+                    <i class="fas fa-user-circle text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="menu-page">
+        <h2>Our Menu</h2>
+        <div class="category" id="food">
+  
+          <h3>Desserts</h3>
+          <div class="menu-items">
+              <div class="menu-item">
+                  <img src="assets/images/Regular pancake.jpg" alt="Food Item">
+                  <div class="menu-text">
+                      <h4>Regular Pancake</h4>
+                  </div>
+                  <div class="menu-price">$7.00</div>
+              </div>
+  
+              <div class="menu-item">
+                  <img src="assets/images/Chocolate pancake.jpg" alt="Food Item">
+                  <div class="menu-text">
+                      <h4>Chocolate Pancake</h4>
+                  </div>
+                  <div class="menu-price">$7.00</div>
+              </div>
+  
+              <div class="menu-item">
+                  <img src="assets/images/Cinamon pancake.JPG" alt="Food Item">
+                  <div class="menu-text">
+                      <h4>Cinnamon Pancake</h4>
+                  </div>
+                  <div class="menu-price">$10.00</div>
+              </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="footerdescription">
+        <div>
+        <h2>ABOUT US</h2>
+        <ul>
+            <li><a href="contact.us.html">Contact Us & FAQs</a></li>
+            <li><a href="">Our Story</a></li>
+            <li><a href="">Encha Info Resources</a></li>
+            <li><a href="">Recipes</a></li>
+        </ul>
+        </div>
+        <div>
+            <h2>LEARN MORE</h2>
+        <ul>
+            <li><a href="">Subscribe & Save up to 15%</a></li>
+            <li><a href="">Shipping Policy</a></li>
+            <li><a href="">Terms and Conditions</a></li>
+        </ul>
+        </div>
+        <div>
+            <h2 >FOLLOW US</h2>
+            <div class="flex justify-center space-x-6">
+                <a href="https://instagram.com" class="hover:text-green-400 transition">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="https://facebook.com" class="hover:text-green-400 transition">
+                    <i class="fab fa-facebook text-2xl"></i>
+                </a>
+             <a href="mailto:contact@organicmatcha.com" class="hover:text-green-400 transition">
+                    <i class="fas fa-envelope text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="st">
+        <p id="stp">© 2024 Organic Matcha Team. All rights reserved.</p>
+    </div>
+        </div>
+
+
+
+
+    </footer>
+
+
+
+
+    <script src="javascript.js"></script>
+    <script>
+      function showCategory(category) {
+          const categories = document.querySelectorAll('.category');
+          categories.forEach((cat) => {
+              cat.style.display = 'none';
+          });
+          const selectedCategory = document.getElementById(category);
+          if (selectedCategory) {
+              selectedCategory.style.display = 'block';
+          }
+      }
+      showCategory('food');
+    </script>
+</body>
+</html>
+
+
+
+
+  
+
+
+
+
+
