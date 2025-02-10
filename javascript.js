@@ -75,20 +75,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-    showCategory('food');
+    showCategory('food');   
 });
 
 
-document.getElementById("muteToggle").addEventListener("click", function() {
-    var video = document.getElementById("videoPlayer");
-    if (video.muted) {
-        video.muted = false;
-        this.textContent = "🔇 Mute"; // Change button text to "Mute"
-    } else {
-        video.muted = true;
-        this.textContent = "🔊 Unmute"; // Change button text to "Unmute"
-    }
-});
 
 
 function searchMenuItems() {

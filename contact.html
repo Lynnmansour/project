@@ -14,7 +14,7 @@
     </header>
     <nav class="fixed top-16 left-0 w-full bg-white shadow-md z-40">
         <div class="container mx-auto flex items-center justify-between py-4 px-6">
-            <!-- Left: Logo and Name -->
+            
             <div class="flex items-center">
                 <img src="assets/images/logo.png" alt="Logo" class="h-14 w-14 rounded-full mr-4">
                 <a href="index.html">
@@ -22,15 +22,23 @@
                 </a>
             </div>
             
-            <!-- Center: Links -->
+           
             <div class="flex space-x-8 text-sm font-medium">
-                <a href="index.html" class="text-black hover-success">HOME</a>
-                <a href="menu.html" class="text-black hover-success">MENU</a>
+               <ul> <a href="index.html" class="text-black hover-success mt-4">HOME</a>
+                <div class="dropdown">    
+                    <li><a href="menu.html" class="menu-link">MENU<i class="fa-solid fa-chevron-down" ></i></a></li>
+                     <div class="dropdown-content">
+                     <li><a href="menu.html" >Food</a></li>
+                     <li><a href="drink.html" >Drinks</a></li>
+                     <li><a href="dessert.html">Desserts</a></li>
+                    </div>
+                    </div>
                 <a href="index.html#aboutus" class="text-black hover-success">ABOUT US</a>
-                <a href="contact.html" class="text-black hover-success">CONTACT US</a>
+                <a href="contact.html" class="text-black hover-success">CONTACT US</a></ul>
             </div>
             
-            <!-- Right: Search and Login Icon -->
+            
+          
             <div class="flex items-center space-x-4">
                 <input type="text" placeholder="Search..." 
                        class="border border-gray-300 rounded-lg px-3 py-1 focus:outline-none focus:ring-2 focus:ring-green-300">
@@ -48,36 +56,29 @@
 <br>
 <br>
 
-
-  
-
-
-
-
-
     <main class="container mx-auto p-6">
         <div class="bg-white p-8 rounded shadow-md w-full max-w-lg mx-auto">
             <h2 class="text-3xl font-semibold text-center text-green-700 mb-6">Contact Us</h2>
             <form>
-                <!-- Name Input -->
+               
                 <div class="mb-4">
                     <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
                     <input type="text" id="name" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-300" placeholder="Your Name" required>
                 </div>
 
-                <!-- Email Input -->
+               
                 <div class="mb-4">
                     <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
                     <input type="email" id="email" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-300" placeholder="Your Email" required>
                 </div>
 
-                <!-- Message Input -->
+           
                 <div class="mb-4">
                     <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
                     <textarea id="message" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-300" placeholder="Your Message" rows="5" required></textarea>
                 </div>
 
-                <!-- Submit Button -->
+           
                 <div>
                     <button type="submit" class="w-full bg-green-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-300">
                         Send Message
@@ -85,7 +86,7 @@
                 </div>
             </form>
 
-            <!-- Footer Link - Login Option -->
+           
             <div class="mt-6 text-center">
                 <p class="text-sm text-gray-600">Already have an account? 
                     <a href="signin.html" class="text-green-600 hover:underline">Login</a>
@@ -93,30 +94,6 @@
             </div>
         </div>
  </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     </body>
